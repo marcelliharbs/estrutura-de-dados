@@ -14,6 +14,7 @@ public class Main {
         int indice = 0;
         String nomeProcurado = null;
         boolean encontrado = false;
+        int tamanho = 0;
 
         while (!(opcao == 0)) {
             System.out.println("1 | Cadastrar");

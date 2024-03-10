@@ -21,7 +21,7 @@ Torna as aplicações organizadas e facilitadas para o uso, como também resulta
 
 - Na interface List, há alguns comandos que facilitam muito seu uso, como o comando **.size()** que retorna o número de elementos da lista.
 
-### Fila 🫧
+### Fila 💫
 
 - **Fila** ou **Queue** é uma *estrutura de dados* em que o primeiro elemento que foi inserido na fila também será o primeiro a ser removido. Não permite elementos duplicados e possui métodos específicos.
 
