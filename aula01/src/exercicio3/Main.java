@@ -11,7 +11,7 @@ public class Main {
         boolean encontrado = false;
         String produtoProcurado = null;
 
-        while (!(opcao == 0)) {
+        while (opcao != 0) {
             System.out.println("1 | Cadastrar produto");
             System.out.println("2 | Listar todos os produtos");
             System.out.println("3 | Pesquisar produto");
@@ -90,7 +90,7 @@ public class Main {
                     }
                     break;
                 case 0:
-                    System.out.println("Encerrando...");
+                    System.out.println("Saindo...");
                     break;
                 default:
                     System.out.println("Opção inválida.");

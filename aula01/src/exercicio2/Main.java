@@ -16,7 +16,7 @@ public class Main {
         boolean encontrado = false;
         int tamanho = 0;
 
-        while (!(opcao == 0)) {
+        while (opcao != 0) {
             System.out.println("1 | Cadastrar");
             System.out.println("2 | Listar");
             System.out.println("3 | Alterar");
