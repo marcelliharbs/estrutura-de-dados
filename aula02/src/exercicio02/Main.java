@@ -9,9 +9,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int opcao = Integer.MAX_VALUE;
-        int indice = 0;
         String nomeProcurado = null;
-        int tamanho = 0;
 
         while (opcao != 0) {
             System.out.println("1 | CADASTRAR");
@@ -50,6 +48,9 @@ public class Main {
                     System.out.println(alterarRegistro(registros, nomeProcurado, novoNome, novoEmail));
                     break;
                 case 5:
+                    System.out.print("Digite o nome do registro que deseja remover: ");
+                    nomeProcurado = sc.nextLine();
+                    System.out.println(removerRegistro(registros, nomeProcurado));
                     break;
                 case 0:
                     System.out.println("Saindo...");
