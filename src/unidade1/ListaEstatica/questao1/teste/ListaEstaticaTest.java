@@ -1,6 +1,7 @@
-package unidade1.ListaEstatica.questao1;
+package unidade1.ListaEstatica.questao1.teste;
 
 import org.junit.jupiter.api.Test;
+import unidade1.ListaEstatica.questao1.ListaEstatica;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -15,7 +16,7 @@ class ListaEstaticaTest {
         lista.inserir(15);
         lista.inserir(20);
 
-        assertEquals("5,10,15,20", lista.toString());
+        Assertions.assertEquals("5,10,15,20", lista.toString());
     }
 
     @Test //2
@@ -25,7 +26,7 @@ class ListaEstaticaTest {
         lista.inserir(15);
         lista.inserir(20);
 
-        assertEquals(4, lista.getTamanho());
+        Assertions.assertEquals(4, lista.getTamanho());
     }
 
     @Test //3
@@ -35,7 +36,7 @@ class ListaEstaticaTest {
         lista.inserir(15);
         lista.inserir(20);
 
-        assertEquals(2, lista.buscar(15));
+        Assertions.assertEquals(2, lista.buscar(15));
 
     }
 
@@ -46,7 +47,7 @@ class ListaEstaticaTest {
         lista.inserir(15);
         lista.inserir(20);
 
-        assertEquals(-1, lista.buscar(30));
+        Assertions.assertEquals(-1, lista.buscar(30));
     }
 
     @Test //5
@@ -58,9 +59,9 @@ class ListaEstaticaTest {
 
         lista.retirar(10);
 
-        assertEquals("5,15,20", lista.toString());
+        Assertions.assertEquals("5,15,20", lista.toString());
 
-        assertEquals(3, lista.getTamanho());
+        Assertions.assertEquals(3, lista.getTamanho());
     }
 
     @Test //6
@@ -69,9 +70,9 @@ class ListaEstaticaTest {
             lista.inserir(i);
         }
 
-        assertEquals("1,2,3,4,5,6,7,8,9,10,11,12,13,14,15", lista.toString());
+        Assertions.assertEquals("1,2,3,4,5,6,7,8,9,10,11,12,13,14,15", lista.toString());
 
-        assertEquals(15, lista.getTamanho());
+        Assertions.assertEquals(15, lista.getTamanho());
     }
 
     @Test //7
@@ -81,7 +82,7 @@ class ListaEstaticaTest {
         lista.inserir(15);
         lista.inserir(20);
 
-        assertEquals(20, lista.obterElemento(3));
+        Assertions.assertEquals(20, lista.obterElemento(3));
     }
 
     @Test //8
@@ -93,7 +94,7 @@ class ListaEstaticaTest {
 
         try {
             lista.obterElemento(5);
-            fail();
+            Assertions.fail();
         } catch (IndexOutOfBoundsException e) {
 
         }
@@ -108,6 +109,6 @@ class ListaEstaticaTest {
 
         lista.liberar();
 
-        assertEquals(true, lista.estaVazia());
+        Assertions.assertEquals(true, lista.estaVazia());
     }
 }
